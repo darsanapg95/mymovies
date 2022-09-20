@@ -10,11 +10,15 @@ const Stack = createNativeStackNavigator();
 export default function Navigation() {
 return(
 <NavigationContainer>
-<Stack.Navigator initialRouteName="Home">
-<Stack.Screen name="drawer" component={drawer} options={{headerShown:false}}/> 
-<Stack.Screen name="home" component={home}/>
-<Stack.Screen name="Mymovies" component={mymovies}/>
-<Stack.Screen name="Details" component={Details}/>
+<Stack.Navigator initialRouteName="drawer">
+<Stack.Screen
+          name="drawer"
+          component={drawer}
+          options={{
+            headerShown: false,
+          }}
+        />
+{/* <Stack.Screen name="drawer" component={drawer} />  */}
 </Stack.Navigator>
 </NavigationContainer>
 )

@@ -11,7 +11,7 @@ import {
 import { useNavigation } from '@react-navigation/native';
 import { horizontalScale,verticalScale } from '../utils/scale';
 
-const App = () => {
+const home = () => {
   const nav = useNavigation();
   return (
     <SafeAreaView style={styles.container}>
@@ -32,7 +32,7 @@ const App = () => {
     </SafeAreaView>
   );
 };
-export default App;
+export default home;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
