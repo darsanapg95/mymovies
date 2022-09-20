@@ -1,11 +1,11 @@
-import { View, ScrollView,Text,Image} from "react-native";
+import { View, ScrollView,Text,Image,StyleSheet} from "react-native";
 import { StatusBar } from "react-native";
 
 export default function Details(movie) {
   return (
     <>
         <View>
-            <Text>hi</Text>
+        <Text style={styles.title}>Descrption of Movies:</Text>
           <StatusBar barStyle="dark-content" />
       <Image
           style={{
@@ -23,3 +23,13 @@ export default function Details(movie) {
     </>
   );
 }
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 35,
+    padding: 15,
+    color: 'black',
+    fontWeight: 'bold',    
+    textAlign: 'center', 
+    marginBottom:30   
+  },
+});
