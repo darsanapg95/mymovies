@@ -16,7 +16,7 @@ const Signup = props => {
     nav.navigate(Login);
   }
   return (
-    <ImageBackground source={require('../assets/image.jpeg')} resizeMode='cover' style={{flex:1}}>
+    <ImageBackground source={require('../assets/im.jpeg')} resizeMode='cover' style={{flex:1}}>
 <View style={{alignItems: 'center', width: 460}}>
         <Text
           style={{
@@ -84,13 +84,13 @@ const Signup = props => {
               justifyContent: 'center',
               paddingBottom: 10,
             }}>
-            <Text style={{fontSize: 16, fontWeight: 'bold',color:'white'}}>
+            <Text style={{fontSize: 16, fontWeight: 'bold',color:'black'}}>
               Already have an account ?{' '}
             </Text>
             <TouchableOpacity
               onPress={() => props.navigation.navigate('Login')}>
               <Text
-                style={{fontWeight: 'bold', fontSize: 16,color:'white'}}>
+                style={{fontWeight: 'bold', fontSize: 16,color:'black'}}>
                 Login
               </Text>
             </TouchableOpacity>

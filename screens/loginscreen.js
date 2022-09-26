@@ -10,7 +10,7 @@ import Signup from './signup';
 const Login = props => {
   
   return (
-    <ImageBackground source={require('../assets/image.jpeg')} resizeMode='cover' style={{flex:1}}>
+    <ImageBackground source={require('../assets/im.jpeg')} resizeMode='cover' style={{flex:1}}>
 <View style={{alignItems: 'center', width: 460}}>
         <Text
           style={{
@@ -61,13 +61,13 @@ const Login = props => {
               justifyContent: 'center',
               paddingBottom: 10,
             }}>
-            <Text style={{fontSize: 16, fontWeight: 'bold',color:'white'}}>
+            <Text style={{fontSize: 16, fontWeight: 'bold',color:'black'}}>
               Don't have an account ?{' '}
             </Text>
             <TouchableOpacity
               onPress={() => props.navigation.navigate('Signup')}>
               <Text
-                style={{fontWeight: 'bold',color:'white', fontSize: 16}}>
+                style={{fontWeight: 'bold',color:'black', fontSize: 16}}>
                 Signup
               </Text>
             </TouchableOpacity>

@@ -17,7 +17,7 @@ const home = () => {
     <SafeAreaView style={styles.container}>
       <ImageBackground
         style={{flex: 1}}
-        source={require('../assets/image.jpeg')}>
+        source={require('../assets/img.jpeg')}>
           <View style={styles.container}>
           <Text style={styles.title}>
             MY MOVIES
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 45,
     padding: 15,
-    color: 'black',
+    color: 'white',
     fontWeight: 'bold',    
     textAlign: 'center', 
     marginBottom:30   
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     width: horizontalScale(180),
     height: verticalScale(55),
     borderRadius: 10,
-    backgroundColor: 'grey',
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
     marginTop:10,
