@@ -1,5 +1,6 @@
-import { View, ScrollView,Text,Image,StyleSheet} from "react-native";
+import { View, ScrollView,Text,Image,StyleSheet,TouchableOpacity} from "react-native";
 import { StatusBar } from "react-native";
+import { fetchMovies } from "../api";
 
 export default function Details(movie) {
   return (
@@ -17,9 +18,7 @@ export default function Details(movie) {
           resizeMode ="cover"
           source={require('../assets/movie.png')}
         />
-             
-        </View>
-      
+</View>
     </>
   );
 }

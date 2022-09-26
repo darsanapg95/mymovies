@@ -27,9 +27,6 @@ export default function MovieCards({ movie }) {
         <Text style={{paddingLeft:10}}>{movie.Type}</Text>
 
       </TouchableOpacity>
-       
-       
-
-    </View>
+      </View>
   );
 }
